@@ -277,7 +277,88 @@ html,body{
         width: 90%;
     }
     .middle {
-        transform: translateY(0); /* Reset for mobile */
+        transform: translateY(0); 
     }
 }
 
+@media (max-width: 1024px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: auto;
+        text-align: center;
+    }
+
+    .nav-item a {
+        position: static !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .nav-item i {
+        position: static !important;
+        font-size: 18px;
+    }
+
+    .nav-item span {
+        position: static !important;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .nav-item i {
+        font-size: 16px;
+    }
+
+    .nav-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .nav-item i {
+        font-size: 14px;
+    }
+
+    .nav-item span {
+        font-size: 10px;
+    }
+}

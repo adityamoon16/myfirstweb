@@ -57,3 +57,99 @@ body,html{
     height: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 375px) {
+    
+.cdg{
+   
+    display: flex!important;
+   justify-content: center !important;
+   align-items: center !important;
+  }
+  
+    
+}
+
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: auto;
+        text-align: center;
+    }
+
+    .nav-item a {
+        position: static !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .nav-item i {
+        position: static !important;
+        font-size: 18px;
+    }
+
+    .nav-item span {
+        position: static !important;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .nav-item i {
+        font-size: 16px;
+    }
+
+    .nav-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .nav-item i {
+        font-size: 14px;
+    }
+
+    .nav-item span {
+        font-size: 10px;
+    }
+}
